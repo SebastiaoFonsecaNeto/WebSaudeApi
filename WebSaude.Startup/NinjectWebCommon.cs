@@ -5,12 +5,8 @@ using Microsoft.Web.Infrastructure.DynamicModuleHelper;
 using Ninject;
 using Ninject.Web.Common;
 using Ninject.Web.WebApi;
-using WebSaude.Application;
-using WebSaude.Application.Interface;
-using WebSaude.Domain.Interfaces.Repositories;
-using WebSaude.Domain.Interfaces.Services;
-using WebSaude.Infra.Data.Repositories;
-using WebSaude.Service;
+using WebSaude.Startup.Repository;
+using WebSaude.Startup.Service;
 
 namespace WebSaude.Startup
 {
@@ -65,14 +61,8 @@ namespace WebSaude.Startup
         /// <param name="kernel">The kernel.</param>
         private static void RegisterServices(IKernel kernel)
         {
-            kernel.Bind(typeof(IAppServiceBase<>)).To(typeof(AppServiceBase<>));
-            kernel.Bind<IClienteAppService>().To<ClienteAppService>();
-
-            kernel.Bind(typeof(IServiceBase<>)).To(typeof(ServiceBase<>));
-            kernel.Bind<IClienteService>().To<ClienteService>();
-
-            kernel.Bind(typeof(IRepositoryBase<>)).To(typeof(RepositoryBase<>));
-            kernel.Bind<IClienteRepository>().To<ClienteRepository>();
+            RegisterService.Register(kernel);
+            RegisterRepository.Register(kernel);
         }
     }
 }
