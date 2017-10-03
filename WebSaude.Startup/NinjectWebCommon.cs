@@ -9,8 +9,8 @@ using WebSaude.Application;
 using WebSaude.Application.Interface;
 using WebSaude.Domain.Interfaces.Repositories;
 using WebSaude.Domain.Interfaces.Services;
-using WebSaude.Domain.Services;
 using WebSaude.Infra.Data.Repositories;
+using WebSaude.Service;
 
 namespace WebSaude.Startup
 {

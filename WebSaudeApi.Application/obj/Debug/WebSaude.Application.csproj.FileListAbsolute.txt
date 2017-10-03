@@ -5,3 +5,10 @@ C:\Users\sebfonseca\Downloads\WebSaudeApi\WebSaudeApi.Application\bin\Debug\WebS
 C:\Users\sebfonseca\Downloads\WebSaudeApi\WebSaudeApi.Application\obj\Debug\WebSaude.Application.csprojResolveAssemblyReference.cache
 C:\Users\sebfonseca\Downloads\WebSaudeApi\WebSaudeApi.Application\obj\Debug\WebSaude.Application.dll
 C:\Users\sebfonseca\Downloads\WebSaudeApi\WebSaudeApi.Application\obj\Debug\WebSaude.Application.pdb
+C:\sis\websaudeapi\WebSaudeApi.Application\bin\Debug\WebSaude.Application.dll
+C:\sis\websaudeapi\WebSaudeApi.Application\bin\Debug\WebSaude.Application.pdb
+C:\sis\websaudeapi\WebSaudeApi.Application\bin\Debug\WebSaude.Domain.dll
+C:\sis\websaudeapi\WebSaudeApi.Application\bin\Debug\WebSaude.Domain.pdb
+C:\sis\websaudeapi\WebSaudeApi.Application\obj\Debug\WebSaude.Application.csprojResolveAssemblyReference.cache
+C:\sis\websaudeapi\WebSaudeApi.Application\obj\Debug\WebSaude.Application.dll
+C:\sis\websaudeapi\WebSaudeApi.Application\obj\Debug\WebSaude.Application.pdb

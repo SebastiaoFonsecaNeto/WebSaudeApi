@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using WebSaude.Domain.Interfaces.Repositories;
 using WebSaude.Domain.Interfaces.Services;
 
-namespace WebSaude.Domain.Services
+namespace WebSaude.Service
 {
     public class ServiceBase<TEntity> : IDisposable, IServiceBase<TEntity> where TEntity : class
     {

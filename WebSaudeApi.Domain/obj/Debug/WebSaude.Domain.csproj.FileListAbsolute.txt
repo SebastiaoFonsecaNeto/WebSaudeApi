@@ -3,3 +3,8 @@ C:\Users\sebfonseca\Downloads\WebSaudeApi\WebSaudeApi.Domain\bin\Debug\WebSaude.
 C:\Users\sebfonseca\Downloads\WebSaudeApi\WebSaudeApi.Domain\obj\Debug\WebSaude.Domain.dll
 C:\Users\sebfonseca\Downloads\WebSaudeApi\WebSaudeApi.Domain\obj\Debug\WebSaude.Domain.pdb
 C:\Users\sebfonseca\Downloads\WebSaudeApi\WebSaudeApi.Domain\bin\Debug\WebSaude.Domain.dll.config
+C:\sis\websaudeapi\WebSaudeApi.Domain\bin\Debug\WebSaude.Domain.dll.config
+C:\sis\websaudeapi\WebSaudeApi.Domain\bin\Debug\WebSaude.Domain.dll
+C:\sis\websaudeapi\WebSaudeApi.Domain\bin\Debug\WebSaude.Domain.pdb
+C:\sis\websaudeapi\WebSaudeApi.Domain\obj\Debug\WebSaude.Domain.dll
+C:\sis\websaudeapi\WebSaudeApi.Domain\obj\Debug\WebSaude.Domain.pdb

@@ -2,7 +2,7 @@
 using WebSaude.Domain.Interfaces.Repositories;
 using WebSaude.Domain.Interfaces.Services;
 
-namespace WebSaude.Domain.Services
+namespace WebSaude.Service
 {
     public class ClienteService : ServiceBase<Cliente>, IClienteService
     {
