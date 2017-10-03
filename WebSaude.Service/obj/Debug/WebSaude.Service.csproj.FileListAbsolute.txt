@@ -1,7 +1,0 @@
-C:\sis\websaudeapi\WebSaude.Service\bin\Debug\WebSaude.Service.dll
-C:\sis\websaudeapi\WebSaude.Service\bin\Debug\WebSaude.Service.pdb
-C:\sis\websaudeapi\WebSaude.Service\bin\Debug\WebSaude.Domain.dll
-C:\sis\websaudeapi\WebSaude.Service\bin\Debug\WebSaude.Domain.pdb
-C:\sis\websaudeapi\WebSaude.Service\obj\Debug\WebSaude.Service.csprojResolveAssemblyReference.cache
-C:\sis\websaudeapi\WebSaude.Service\obj\Debug\WebSaude.Service.dll
-C:\sis\websaudeapi\WebSaude.Service\obj\Debug\WebSaude.Service.pdb
