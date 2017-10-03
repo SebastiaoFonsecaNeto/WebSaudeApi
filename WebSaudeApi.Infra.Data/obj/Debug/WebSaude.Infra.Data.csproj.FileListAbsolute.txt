@@ -1,0 +1,14 @@
+C:\Users\sebfonseca\Downloads\WebSaudeApi\WebSaudeApi.Infra.Data\bin\Debug\WebSaude.Infra.Data.dll.config
+C:\Users\sebfonseca\Downloads\WebSaudeApi\WebSaudeApi.Infra.Data\bin\Debug\WebSaude.Infra.Data.dll
+C:\Users\sebfonseca\Downloads\WebSaudeApi\WebSaudeApi.Infra.Data\bin\Debug\WebSaude.Infra.Data.pdb
+C:\Users\sebfonseca\Downloads\WebSaudeApi\WebSaudeApi.Infra.Data\bin\Debug\EntityFramework.dll
+C:\Users\sebfonseca\Downloads\WebSaudeApi\WebSaudeApi.Infra.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\sebfonseca\Downloads\WebSaudeApi\WebSaudeApi.Infra.Data\bin\Debug\WebSaude.Domain.dll
+C:\Users\sebfonseca\Downloads\WebSaudeApi\WebSaudeApi.Infra.Data\bin\Debug\WebSaude.Domain.pdb
+C:\Users\sebfonseca\Downloads\WebSaudeApi\WebSaudeApi.Infra.Data\bin\Debug\EntityFramework.xml
+C:\Users\sebfonseca\Downloads\WebSaudeApi\WebSaudeApi.Infra.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\sebfonseca\Downloads\WebSaudeApi\WebSaudeApi.Infra.Data\obj\Debug\WebSaude.Infra.Data.csprojResolveAssemblyReference.cache
+C:\Users\sebfonseca\Downloads\WebSaudeApi\WebSaudeApi.Infra.Data\obj\Debug\WebSaude.Infra.Data.Migrations.AddPostAbstract.resources
+C:\Users\sebfonseca\Downloads\WebSaudeApi\WebSaudeApi.Infra.Data\obj\Debug\WebSaude.Infra.Data.csproj.GenerateResource.Cache
+C:\Users\sebfonseca\Downloads\WebSaudeApi\WebSaudeApi.Infra.Data\obj\Debug\WebSaude.Infra.Data.dll
+C:\Users\sebfonseca\Downloads\WebSaudeApi\WebSaudeApi.Infra.Data\obj\Debug\WebSaude.Infra.Data.pdb

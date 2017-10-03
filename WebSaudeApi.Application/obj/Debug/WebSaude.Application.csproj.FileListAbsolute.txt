@@ -1,0 +1,7 @@
+C:\Users\sebfonseca\Downloads\WebSaudeApi\WebSaudeApi.Application\bin\Debug\WebSaude.Application.dll
+C:\Users\sebfonseca\Downloads\WebSaudeApi\WebSaudeApi.Application\bin\Debug\WebSaude.Application.pdb
+C:\Users\sebfonseca\Downloads\WebSaudeApi\WebSaudeApi.Application\bin\Debug\WebSaude.Domain.dll
+C:\Users\sebfonseca\Downloads\WebSaudeApi\WebSaudeApi.Application\bin\Debug\WebSaude.Domain.pdb
+C:\Users\sebfonseca\Downloads\WebSaudeApi\WebSaudeApi.Application\obj\Debug\WebSaude.Application.csprojResolveAssemblyReference.cache
+C:\Users\sebfonseca\Downloads\WebSaudeApi\WebSaudeApi.Application\obj\Debug\WebSaude.Application.dll
+C:\Users\sebfonseca\Downloads\WebSaudeApi\WebSaudeApi.Application\obj\Debug\WebSaude.Application.pdb
