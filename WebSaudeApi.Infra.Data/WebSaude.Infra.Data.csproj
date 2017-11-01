@@ -49,14 +49,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contexto\WebSaudeContext.cs" />
-    <Compile Include="EntityConfig\ClienteConfiguration.cs" />
-    <Compile Include="Migrations\201710031306254_AddPostAbstract.cs" />
-    <Compile Include="Migrations\201710031306254_AddPostAbstract.Designer.cs">
-      <DependentUpon>201710031306254_AddPostAbstract.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="EntityConfig\PacienteConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositories\ClienteRepository.cs" />
+    <Compile Include="Repositories\PacienteRepository.cs" />
     <Compile Include="Repositories\RespositoryBase.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -68,11 +63,6 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201710031306254_AddPostAbstract.resx">
-      <DependentUpon>201710031306254_AddPostAbstract.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

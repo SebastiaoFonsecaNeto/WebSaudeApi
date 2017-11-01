@@ -13,8 +13,8 @@ namespace WebSaude.Startup.Service
             kernel.Bind(typeof(IServiceBase<>)).To(typeof(ServiceBase<>));
             kernel.Bind(typeof(IAppServiceBase<>)).To(typeof(AppServiceBase<>));
 
-            kernel.Bind<IClienteService>().To<ClienteService>();
-            kernel.Bind<IClienteAppService>().To<ClienteAppService>();
+            kernel.Bind<IPacienteService>().To<PacienteService>();
+            kernel.Bind<IPacienteAppService>().To<PacienteAppService>();
         }
     }
 }

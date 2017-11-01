@@ -2,7 +2,7 @@
 
 namespace WebSaude.Domain.Interfaces.Services
 {
-    public interface IClienteService : IServiceBase<Cliente>
+    public interface IPacienteService : IServiceBase<Paciente>
     {
     }
 }

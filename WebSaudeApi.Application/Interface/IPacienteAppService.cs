@@ -2,7 +2,7 @@
 
 namespace WebSaude.Application.Interface
 {
-    public interface IClienteAppService : IAppServiceBase<Cliente>
+    public interface IPacienteAppService : IAppServiceBase<Paciente>
     {
     }
 }

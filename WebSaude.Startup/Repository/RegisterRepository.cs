@@ -9,7 +9,7 @@ namespace WebSaude.Startup.Repository
         public static void Register(IKernel kernel)
         {
             kernel.Bind(typeof(IRepositoryBase<>)).To(typeof(RepositoryBase<>));
-            kernel.Bind<IClienteRepository>().To<ClienteRepository>();
+            kernel.Bind<IPacienteRepository>().To<PacienteRepository>();
         }
     }
 }

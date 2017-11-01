@@ -2,7 +2,7 @@
 
 namespace WebSaude.Domain.Interfaces.Repositories
 {
-    public interface IClienteRepository : IRepositoryBase<Cliente>
+    public interface IPacienteRepository : IRepositoryBase<Paciente>
     {
     }
 }

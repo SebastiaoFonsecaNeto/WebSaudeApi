@@ -30,10 +30,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Entities\Cliente.cs" />
-    <Compile Include="Interfaces\Repositories\IClienteRepository.cs" />
+    <Compile Include="Entities\Paciente.cs" />
+    <Compile Include="Interfaces\Repositories\IPacienteRepository.cs" />
     <Compile Include="Interfaces\Repositories\IRepositoryBase.cs" />
-    <Compile Include="Interfaces\Services\IClienteService.cs" />
+    <Compile Include="Interfaces\Services\IPacienteService.cs" />
     <Compile Include="Interfaces\Services\IServiceBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

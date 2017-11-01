@@ -3,7 +3,7 @@ using WebSaude.Domain.Interfaces.Repositories;
 
 namespace WebSaude.Infra.Data.Repositories
 {
-    public class ClienteRepository : RepositoryBase<Cliente>, IClienteRepository
+    public class PacienteRepository : RepositoryBase<Paciente>, IPacienteRepository
     {
     }
 }

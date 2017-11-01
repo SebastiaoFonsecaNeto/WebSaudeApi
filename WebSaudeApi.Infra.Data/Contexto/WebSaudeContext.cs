@@ -10,10 +10,9 @@ namespace WebSaude.Infra.Data.Contexto
         public WebSaudeContext()
             : base("WebSaude")
         {
-            
         }
 
-        public DbSet<Cliente> Clientes { get; set; }
+        public DbSet<Paciente> Pacientes { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -31,7 +30,7 @@ namespace WebSaude.Infra.Data.Contexto
             modelBuilder.Properties<string>()
                 .Configure(p => p.HasMaxLength(100));
 
-            modelBuilder.Configurations.Add(new ClienteConfiguration());
+            modelBuilder.Configurations.Add(new PacienteConfiguration());
         }
     }
 }

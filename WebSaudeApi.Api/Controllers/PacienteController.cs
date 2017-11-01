@@ -5,38 +5,37 @@ using WebSaude.Application.Interface;
 namespace WebSaude.Api.Controllers
 {
     [RoutePrefix("")]
-    public class ClientesController: ApiController
+    public class PacienteController : ApiController
     {
-        private readonly IClienteAppService _clienteApp;
-        
-        public ClientesController(IClienteAppService clienteApp)
+        private readonly IPacienteAppService _pacienteApp;
+
+        public PacienteController(IPacienteAppService pacienteApp)
         {
-            _clienteApp = clienteApp;
+            _pacienteApp = pacienteApp;
         }
 
         /// <summary>
-        /// Listar todos os clientes cadastrados
+        ///     Listar todos os pacientes cadastrados
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        [Route("clientes")]
+        [Route("pacientes")]
         public IHttpActionResult GetAll()
         {
             try
             {
-                var clientes = _clienteApp.GetAll();
-                if (clientes == null)
+                var pacientes = _pacienteApp.GetAll();
+                if (pacientes == null)
                 {
                     return NotFound();
                 }
 
-                return Ok(clientes);
+                return Ok(pacientes);
             }
             catch (Exception e)
             {
                 throw new Exception("erro consultar :" + e.Message);
             }
         }
-
     }
 }
