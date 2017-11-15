@@ -49,6 +49,8 @@ namespace WebSaude.Infra.Data.EntityConfig
 
             Property(c => c.DataHora)
                 .IsRequired()
+                .HasMaxLength(8)
+                .IsFixedLength()
                 .HasColumnType("timestamp")
                 .HasColumnName("data_hora");
         }

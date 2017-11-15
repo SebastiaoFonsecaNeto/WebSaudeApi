@@ -7,6 +7,6 @@ namespace WebSaude.Domain.Entities
         public int Id { get; set; }
         public int Ip { get; set; }
         public int QuantidadeMinuto { get; set; }
-        public DateTime Ultimo { get; set; }
+        public byte[] Ultimo { get; set; }
     }
 }

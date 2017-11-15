@@ -18,7 +18,7 @@ namespace WebSaude.Domain.Entities
 
         public int ContaTipoId { get; set; }
 
-        public DateTime DataHora { get; set; }
+        public byte[] DataHora { get; set; }
 
         public string Descricao { get; set; }
 

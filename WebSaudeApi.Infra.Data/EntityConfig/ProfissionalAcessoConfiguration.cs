@@ -54,6 +54,8 @@ namespace WebSaude.Infra.Data.EntityConfig
                 .HasColumnName("sab");
 
             Property(c => c.Ultimo)
+                .HasMaxLength(8)
+                .IsFixedLength()
                 .HasColumnType("timestamp")
                 .HasColumnName("ultimo");
 

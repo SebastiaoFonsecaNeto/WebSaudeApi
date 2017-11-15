@@ -7,9 +7,9 @@ namespace WebSaude.Infra.Data.Contexto
 {
     public class WebSaudeContext : DbContext
     {
-        public WebSaudeContext()
-            : base("WebSaude")
+        public WebSaudeContext() : base("WebSaude")
         {
+            Configuration.LazyLoadingEnabled = false;
         }
 
         public virtual DbSet<Agenda> Agenda { get; set; }

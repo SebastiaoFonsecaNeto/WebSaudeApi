@@ -7,7 +7,7 @@ namespace WebSaude.Infra.Data.EntityConfig
     {
         public UnidadeConfiguration()
         {
-            ToTable("paciente");
+            ToTable("unidade");
 
             HasKey(c => c.Id);
 
@@ -96,8 +96,9 @@ namespace WebSaude.Infra.Data.EntityConfig
                 .WillCascadeOnDelete(false);
 
             HasMany(e => e.ProntoAtendimento)
-                .WithOptional(e => e.Unidade)
-                .HasForeignKey(e => e.UnidadeId);
+                .WithRequired(e => e.Unidade)
+                .HasForeignKey(e => e.UnidadeId)
+                .WillCascadeOnDelete(false);
 
             HasMany(e => e.ProntuarioClinico)
                 .WithRequired(e => e.Unidade)

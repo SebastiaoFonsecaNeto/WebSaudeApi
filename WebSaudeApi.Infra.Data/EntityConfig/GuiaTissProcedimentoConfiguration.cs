@@ -9,7 +9,11 @@ namespace WebSaude.Infra.Data.EntityConfig
         {
             ToTable("guia_tiss_procedimento");
 
-            HasKey(c => c.GuiaTissId);
+            HasKey(c => c.Id);
+
+            Property(c => c.Id)
+                .IsRequired()
+                .HasColumnName("id");
 
             Property(c => c.GuiaTissId)
                 .IsRequired()

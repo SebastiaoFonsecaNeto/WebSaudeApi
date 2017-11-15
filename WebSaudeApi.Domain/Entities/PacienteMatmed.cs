@@ -13,7 +13,7 @@ namespace WebSaude.Domain.Entities
         public decimal? Valor { get; set; }
         public int? Quantidade { get; set; }
         public int? Status { get; set; }
-        public DateTime DataHora { get; set; }
+        public byte[] DataHora { get; set; }
         public virtual EstoqueProduto EstoqueProduto { get; set; }
         public virtual Paciente Paciente { get; set; }
         public virtual ProntuarioClinico ProntuarioClinico { get; set; }

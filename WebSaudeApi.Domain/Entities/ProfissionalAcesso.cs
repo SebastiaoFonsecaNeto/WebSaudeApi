@@ -16,7 +16,7 @@ namespace WebSaude.Domain.Entities
         public bool? Qui { get; set; }
         public bool? Sex { get; set; }
         public bool? Sab { get; set; }
-        public DateTime Ultimo { get; set; }
+        public byte[] Ultimo { get; set; }
         public int? Ip { get; set; }
         public int? QuantidadeMinuto { get; set; }
         public string Token { get; set; }

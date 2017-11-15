@@ -53,6 +53,8 @@ namespace WebSaude.Infra.Data.EntityConfig
 
             Property(c => c.Data)
                 .IsRequired()
+                .HasMaxLength(8)
+                .IsFixedLength()
                 .HasColumnType("timestamp")
                 .HasColumnName("data");
 

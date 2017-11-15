@@ -112,8 +112,9 @@ namespace WebSaude.Infra.Data.EntityConfig
                 .WillCascadeOnDelete(false);
 
             HasMany(e => e.ProntoAtendimento)
-                .WithOptional(e => e.Profissional)
-                .HasForeignKey(e => e.ProfissionalId);
+                .WithRequired(e => e.Profissional)
+                .HasForeignKey(e => e.ProfissionalId)
+                .WillCascadeOnDelete(false);
 
             HasMany(e => e.ProntuarioClinico)
                 .WithRequired(e => e.Profissional)
