@@ -73,10 +73,6 @@
       <Project>{a2ea021f-d353-4a1d-9472-06de4143f4b1}</Project>
       <Name>WebSaude.Service</Name>
     </ProjectReference>
-    <ProjectReference Include="..\WebSaudeApi.Application\WebSaude.Application.csproj">
-      <Project>{04BB3549-5197-4106-992A-BBF275A138C6}</Project>
-      <Name>WebSaude.Application</Name>
-    </ProjectReference>
     <ProjectReference Include="..\WebSaudeApi.Domain\WebSaude.Domain.csproj">
       <Project>{984CB356-B992-441E-BF81-A36D1B30ADD0}</Project>
       <Name>WebSaude.Domain</Name>

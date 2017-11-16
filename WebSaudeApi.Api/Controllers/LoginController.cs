@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Net;
 using System.Web.Http;
-using WebSaude.Application.Interface;
+using WebSaude.Domain.Interfaces.Services;
 
 namespace WebSaude.Api.Controllers
 {
@@ -9,11 +9,11 @@ namespace WebSaude.Api.Controllers
     [RoutePrefix("")]
     public class LoginController : ApiController
     {
-        private readonly IProfissionalAcesso _pacienteApp;
+        private readonly IProfissionalAcessoService _profissionalAcessoService;
 
-        public LoginController(IPacienteAppService pacienteApp)
+        public LoginController(IProfissionalAcessoService profissionalAcessoService)
         {
-            _pacienteApp = pacienteApp;
+            _profissionalAcessoService = profissionalAcessoService;
         }
 
         /// <summary>
@@ -22,22 +22,21 @@ namespace WebSaude.Api.Controllers
         /// <returns>Autenticar na API utilizando usuario e senha pré cadastrados</returns>
         [HttpGet]
         [Route("login")]
-        public IHttpActionResult Listar([FromUri] string email, [FromUri] string senha)
+        public IHttpActionResult Autenticar(string email, string senha)
         {
-            if (!string.IsNullOrWhiteSpace(email) && !string.IsNullOrWhiteSpace(senha))
-            {
-                try
-                {
-                    var resultado = _profissionaisAppService.Login(email, senha);
+            if (string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(senha))
+                return Content(HttpStatusCode.Unauthorized, "Email ou Senha inválidos");
 
-                    return Ok(resultado);
-                }
-                catch (Exception e)
-                {
-                    return Content(HttpStatusCode.Unauthorized, e.Message);
-                }
+            try
+            {
+                var resultado = _profissionalAcessoService.Login(email, senha);
+
+                return Ok(resultado);
             }
-            return Content(HttpStatusCode.Unauthorized, "Email ou Senha inválidos");
+            catch (Exception e)
+            {
+                return Content(HttpStatusCode.Unauthorized, e.Message);
+            }
         }
     }
 }

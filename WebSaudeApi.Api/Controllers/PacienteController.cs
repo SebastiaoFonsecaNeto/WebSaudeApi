@@ -1,17 +1,19 @@
 ﻿using System;
+using System.Linq;
 using System.Web.Http;
-using WebSaude.Application.Interface;
+using WebSaude.Domain.Interfaces.Services;
 
 namespace WebSaude.Api.Controllers
 {
+    [Auth]
     [RoutePrefix("")]
     public class PacienteController : ApiController
     {
-        private readonly IPacienteAppService _pacienteApp;
+        private readonly IPacienteService _pacienteService;
 
-        public PacienteController(IPacienteAppService pacienteApp)
+        public PacienteController(IPacienteService pacienteService)
         {
-            _pacienteApp = pacienteApp;
+            _pacienteService = pacienteService;
         }
 
         /// <summary>
@@ -24,8 +26,8 @@ namespace WebSaude.Api.Controllers
         {
             try
             {
-                var pacientes = _pacienteApp.GetAll();
-                if (pacientes == null)
+                var pacientes = _pacienteService.GetAll();
+                if (pacientes == null || !pacientes.Any())
                 {
                     return NotFound();
                 }
