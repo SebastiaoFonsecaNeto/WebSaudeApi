@@ -6,7 +6,7 @@ namespace WebSaude.Domain.Entities
     {
         public int Id { get; set; }
         public int ProfissionalId { get; set; }
-        public byte[] Data { get; set; }
+        public DateTime Data { get; set; }
         public string Tabela { get; set; }
         public string TipoManutencao { get; set; }
         public string DadosAnt { get; set; }

@@ -1,5 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-using System.Data.Entity.ModelConfiguration;
+﻿using System.Data.Entity.ModelConfiguration;
 using WebSaude.Domain.Entities;
 
 namespace WebSaude.Infra.Data.EntityConfig
@@ -17,9 +16,8 @@ namespace WebSaude.Infra.Data.EntityConfig
                 .HasColumnName("id");
 
             Property(c => c.Ultimo)
-                .HasMaxLength(8)
-                .IsFixedLength()
-                .HasColumnType("timestamp")
+                .IsRequired()
+                .HasColumnType("datetime")
                 .HasColumnName("ultimo");
 
             Property(c => c.Ip)

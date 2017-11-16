@@ -106,6 +106,9 @@
     <Compile Include="Interfaces\Repositories\IAparelhoRepository.cs" />
     <Compile Include="Interfaces\Repositories\IAgendaRepository.cs" />
     <Compile Include="Interfaces\Repositories\IPacienteRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IProfissionalAcessoRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IWebControleRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IProfissionalRepository.cs" />
     <Compile Include="Interfaces\Repositories\IRepositoryBase.cs" />
     <Compile Include="Interfaces\Services\IPacienteService.cs" />
     <Compile Include="Interfaces\Services\IServiceBase.cs" />

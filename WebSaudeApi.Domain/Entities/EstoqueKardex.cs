@@ -13,7 +13,7 @@ namespace WebSaude.Domain.Entities
         public string Tipo { get; set; }
         public int Quantidade { get; set; }
         public int SaldoPosterior { get; set; }
-        public byte[] Data { get; set; }
+        public DateTime Data { get; set; }
         public DateTime DataLancamento { get; set; }
         public virtual EstoqueLote EstoqueLote { get; set; }
         public virtual EstoqueProduto EstoqueProduto { get; set; }

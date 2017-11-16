@@ -126,6 +126,9 @@
     <Compile Include="Repositories\AparelhoRepository.cs" />
     <Compile Include="Repositories\AgendaRepository.cs" />
     <Compile Include="Repositories\PacienteRepository.cs" />
+    <Compile Include="Repositories\ProfissionalAcessoRepository.cs" />
+    <Compile Include="Repositories\WebControleRepository.cs" />
+    <Compile Include="Repositories\ProfissionalRepository.cs" />
     <Compile Include="Repositories\RespositoryBase.cs" />
   </ItemGroup>
   <ItemGroup>

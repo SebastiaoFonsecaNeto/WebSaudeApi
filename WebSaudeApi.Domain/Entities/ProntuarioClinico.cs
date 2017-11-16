@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace WebSaude.Domain.Entities
 {
-    public partial class ProntuarioClinico
+    public class ProntuarioClinico
     {
         public ProntuarioClinico()
         {
@@ -16,7 +16,7 @@ namespace WebSaude.Domain.Entities
         public int ProfissionalId { get; set; }
         public int CboId { get; set; }
         public int UnidadeId { get; set; }
-        public byte[] DataHora { get; set; }
+        public DateTime DataHora { get; set; }
         public string Descricao { get; set; }
         public int? PressaoMax { get; set; }
         public int? PressaoMin { get; set; }
