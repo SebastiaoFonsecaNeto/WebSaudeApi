@@ -55,7 +55,7 @@ namespace WebSaude.Api
 
                     _profissionalAcesso.Ultimo = DateTime.Now;
                     _profissionalAcesso.Ip = HttpContext.Current != null
-                        ? Convert.ToInt32(HttpContext.Current.Request.UserHostAddress)
+                        ? Convert.ToInt32(HttpContext.Current.Request.UserHostAddress?.Replace(":", ""))
                         : 0;
 
                     try

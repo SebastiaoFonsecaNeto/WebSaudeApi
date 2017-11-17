@@ -19,7 +19,7 @@ namespace WebSaude.Infra.Data.Repositories
         {
             try
             {
-                var profissional = GetAll().FirstOrDefault(p => p.Profissional.Email == email);
+                var profissional = GetAll().FirstOrDefault(p => p.Profissional?.Email == email);
 
                 if (profissional == null)
                     throw new Exception(ProfissionalResource.ProfissionalNaoCadastrado);

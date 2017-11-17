@@ -49,6 +49,7 @@
     <Compile Include="Entities\AnsUnidadeMedida.cs" />
     <Compile Include="Entities\AnsViaAcesso.cs" />
     <Compile Include="Entities\Aparelho.cs" />
+    <Compile Include="Entities\Autenticacao.cs" />
     <Compile Include="Entities\Cbo.cs" />
     <Compile Include="Entities\CelularOperadora.cs" />
     <Compile Include="Entities\Conselho.cs" />

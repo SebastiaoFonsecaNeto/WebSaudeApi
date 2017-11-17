@@ -21,7 +21,7 @@ namespace WebSaude.Api
 
         public override void OnActionExecuting(HttpActionContext actionContext)
         {
-            var ip = HttpContext.Current != null ? Convert.ToInt32(HttpContext.Current.Request.UserHostAddress) : 0;
+            var ip = HttpContext.Current != null ? Convert.ToInt32(HttpContext.Current.Request.UserHostAddress?.Replace(":","")) : 0;
 
             var webcontrole = _webControleRepositorio.ConsultarPorIp(ip);
 

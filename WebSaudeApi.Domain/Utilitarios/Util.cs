@@ -10,26 +10,34 @@ namespace WebSaude.Domain.Utilitarios
             var data = DateTime.Now.ToString("ddMMyyyyhhmmss");
 
             var crip = string.Empty;
-
             var random = new Random();
-            var builder = new StringBuilder();
-            var index = 0;
             foreach (var character in data)
             {
-                builder.Clear();
-                crip +=
-                    builder.Append(Convert.ToChar(Convert.ToInt32(Math.Floor(26 * random.NextDouble() + 65)))).ToString() +
-                    CaracterEspecial(random) + id[index] + character;
-                index++;
+                crip += CaracterComum(random.NextDouble()) + Numerico(random) + CaracterEspecial(random) +
+                        CaracterComum(random.NextDouble()) + Numerico(random) + CaracterEspecial(random) +
+                        character;
             }
 
-            return crip;
+            return crip + "id" + id;
         }
 
-        private static char CaracterEspecial(Random rng)
+        private static string CaracterComum(double random)
+        {
+            var builder = new StringBuilder();
+            return builder.Append(Convert.ToChar(Convert.ToInt32(Math.Floor(26*random + 65)))).ToString();
+        }
+
+        private static char CaracterEspecial(Random random)
         {
             const string characterDisponivel = "!#$%&*-+^~";
-            var index = rng.Next(characterDisponivel.Length);
+            var index = random.Next(characterDisponivel.Length);
+            return characterDisponivel[index];
+        }
+
+        private static char Numerico(Random random)
+        {
+            const string characterDisponivel = "1234567890";
+            var index = random.Next(characterDisponivel.Length);
             return characterDisponivel[index];
         }
     }

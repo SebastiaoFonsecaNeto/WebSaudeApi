@@ -16,7 +16,6 @@ namespace WebSaude.Domain.Entities
 
         public int Id { get; set; }
         public int CboId { get; set; }
-        public int PermissaoId { get; set; }
         public string Nome { get; set; }
         public string Documento { get; set; }
         public string Email { get; set; }
