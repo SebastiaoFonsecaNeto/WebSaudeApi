@@ -12,7 +12,7 @@ namespace WebSaude.Infra.Data.Repositories
     {
         public ProfissionalAcesso ConsultAcessoPorToken(string token)
         {
-            return GetAll().FirstOrDefault(p => p.Token == token);
+            return Db.ProfissionalAcesso.FirstOrDefault(p => p.Token == token);
         }
 
         public string Login(string email, string senha)
@@ -31,6 +31,8 @@ namespace WebSaude.Infra.Data.Repositories
                 profissional.Ultimo = DateTime.Now;
 
                 Update(profissional);
+
+                Db.SaveChanges();
 
                 return (profissional.Token);
             }
