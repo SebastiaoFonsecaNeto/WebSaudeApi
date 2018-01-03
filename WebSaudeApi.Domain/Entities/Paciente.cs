@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using WebSaude.Domain.Commands;
 
 namespace WebSaude.Domain.Entities
 {
@@ -53,5 +54,52 @@ namespace WebSaude.Domain.Entities
         public virtual ICollection<PacienteProntuarioUnidade> PacienteProntuarioUnidade { get; set; }
         public virtual ICollection<ProntoAtendimento> ProntoAtendimento { get; set; }
         public virtual ICollection<ProntuarioClinico> ProntuarioClinico { get; set; }
+
+        public static Paciente Criar(PacienteCommand pacienteNovo)
+        {
+            return new Paciente
+            {
+                Email = pacienteNovo.Email,
+                Bairro = pacienteNovo.Bairro,
+                Celular = pacienteNovo.Celular,
+                CelularOperadoraId = pacienteNovo.CelularOperadoraId,
+                Cep = pacienteNovo.Cep,
+                Cidade = pacienteNovo.Cidade,
+                Cns = pacienteNovo.Cns,
+                Complemento = pacienteNovo.Complemento,
+                Cpf = pacienteNovo.Cpf,
+                Dependente = pacienteNovo.Dependente,
+                DataNascimento = pacienteNovo.DataNascimento,
+                Endereco = pacienteNovo.Endereco,
+                Estado = pacienteNovo.Estado,
+                Nome = pacienteNovo.Nome,
+                Numero = pacienteNovo.Numero,
+                Responsavel = pacienteNovo.Responsavel,
+                Sexo = pacienteNovo.Sexo,
+                Telefone = pacienteNovo.Telefone
+            };
+        }
+
+        public static void Alterar(Paciente paciente, PacienteCommand pacienteAlterado)
+        {
+            paciente.Email = pacienteAlterado.Email;
+            paciente.Bairro = pacienteAlterado.Bairro;
+            paciente.Celular = pacienteAlterado.Celular;
+            paciente.CelularOperadoraId = pacienteAlterado.CelularOperadoraId;
+            paciente.Cep = pacienteAlterado.Cep;
+            paciente.Cidade = pacienteAlterado.Cidade;
+            paciente.Cns = pacienteAlterado.Cns;
+            paciente.Complemento = pacienteAlterado.Complemento;
+            paciente.Cpf = pacienteAlterado.Cpf;
+            paciente.Dependente = pacienteAlterado.Dependente;
+            paciente.DataNascimento = pacienteAlterado.DataNascimento;
+            paciente.Endereco = pacienteAlterado.Endereco;
+            paciente.Estado = pacienteAlterado.Estado;
+            paciente.Nome = pacienteAlterado.Nome;
+            paciente.Numero = pacienteAlterado.Numero;
+            paciente.Responsavel = pacienteAlterado.Responsavel;
+            paciente.Sexo = pacienteAlterado.Sexo;
+            paciente.Telefone = pacienteAlterado.Telefone;
+        }
     }
 }

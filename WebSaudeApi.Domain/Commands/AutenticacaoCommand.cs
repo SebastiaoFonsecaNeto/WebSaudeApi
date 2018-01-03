@@ -1,6 +1,6 @@
-﻿namespace WebSaude.Domain.Entities
+﻿namespace WebSaude.Domain.Commands
 {
-    public class Autenticacao
+    public class AutenticacaoCommand
     {
         public string Email { get; set; }
         public string Senha { get; set; }

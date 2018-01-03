@@ -12,7 +12,7 @@ namespace WebSaude.Infra.Data.Repositories
     {
         public ProfissionalAcesso ConsultAcessoPorToken(string token)
         {
-            return Db.ProfissionalAcesso.FirstOrDefault(p => p.Token == token);
+            return GetAll().FirstOrDefault(p => p.Token == token);
         }
 
         public string Login(string email, string senha)
@@ -35,6 +35,29 @@ namespace WebSaude.Infra.Data.Repositories
                 Db.SaveChanges();
 
                 return (profissional.Token);
+            }
+            catch (EntitySqlException erro)
+            {
+                throw new Exception(erro.Message);
+            }
+        }
+
+        public bool Logout(string email)
+        {
+            try
+            {
+                var profissional = GetAll().FirstOrDefault(p => p.Profissional?.Email == email);
+
+                if (profissional == null)
+                    throw new Exception(ProfissionalResource.ProfissionalNaoCadastrado);
+                
+                profissional.Token = null;
+
+                Update(profissional);
+
+                Db.SaveChanges();
+
+                return true;
             }
             catch (EntitySqlException erro)
             {

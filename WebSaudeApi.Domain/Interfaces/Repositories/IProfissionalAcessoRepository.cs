@@ -7,5 +7,6 @@ namespace WebSaude.Domain.Interfaces.Repositories
         ProfissionalAcesso ConsultAcessoPorToken(string token);
 
         string Login(string email, string senha);
+        bool Logout(string email);
     }
 }

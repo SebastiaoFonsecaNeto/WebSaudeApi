@@ -30,6 +30,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Commands\EmailCommand.cs" />
+    <Compile Include="Commands\PacienteCommand.cs" />
     <Compile Include="Entities\Agenda.cs" />
     <Compile Include="Entities\AgendaAparelho.cs" />
     <Compile Include="Entities\AnsCaraterAtendimento.cs" />
@@ -49,7 +51,7 @@
     <Compile Include="Entities\AnsUnidadeMedida.cs" />
     <Compile Include="Entities\AnsViaAcesso.cs" />
     <Compile Include="Entities\Aparelho.cs" />
-    <Compile Include="Entities\Autenticacao.cs" />
+    <Compile Include="Commands\AutenticacaoCommand.cs" />
     <Compile Include="Entities\Cbo.cs" />
     <Compile Include="Entities\CelularOperadora.cs" />
     <Compile Include="Entities\Conselho.cs" />
