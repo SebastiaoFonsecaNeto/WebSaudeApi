@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using WebSaude.Domain.Commands;
 
 namespace WebSaude.Domain.Entities
 {
@@ -42,5 +43,48 @@ namespace WebSaude.Domain.Entities
         public virtual ICollection<ProfissionalUnidade> ProfissionalUnidade { get; set; }
         public virtual ICollection<ProntoAtendimento> ProntoAtendimento { get; set; }
         public virtual ICollection<ProntuarioClinico> ProntuarioClinico { get; set; }
+
+        public static Profissional Criar(ProfissionalCommand profissionalNovo)
+        {
+            return new Profissional
+            {
+                CboId = profissionalNovo.CboId,
+                Nome = profissionalNovo.Nome,
+                Documento = profissionalNovo.Documento,
+                Email = profissionalNovo.Email,
+                Telefone = profissionalNovo.Telefone,
+                Celular = profissionalNovo.Celular,
+                CelularOperadoraId = profissionalNovo.CelularOperadoraId,
+                Endereco = profissionalNovo.Endereco,
+                Numero = profissionalNovo.Numero,
+                Complemento = profissionalNovo.Complemento,
+                Bairro = profissionalNovo.Bairro,
+                Cidade = profissionalNovo.Cidade,
+                Estado = profissionalNovo.Estado,
+                Cep = profissionalNovo.Cep,
+                Ativo = profissionalNovo.Ativo,
+                Observacao = profissionalNovo.Observacao
+            };
+        }
+
+        public static void Alterar(Profissional profissional, ProfissionalCommand profissionalAlterado)
+        {
+            profissional.CboId = profissionalAlterado.CboId;
+            profissional.Nome = profissionalAlterado.Nome;
+            profissional.Documento = profissionalAlterado.Documento;
+            profissional.Email = profissionalAlterado.Email;
+            profissional.Telefone = profissionalAlterado.Telefone;
+            profissional.Celular = profissionalAlterado.Celular;
+            profissional.CelularOperadoraId = profissionalAlterado.CelularOperadoraId;
+            profissional.Endereco = profissionalAlterado.Endereco;
+            profissional.Numero = profissionalAlterado.Numero;
+            profissional.Complemento = profissionalAlterado.Complemento;
+            profissional.Bairro = profissionalAlterado.Bairro;
+            profissional.Cidade = profissionalAlterado.Cidade;
+            profissional.Estado = profissionalAlterado.Estado;
+            profissional.Cep = profissionalAlterado.Cep;
+            profissional.Ativo = profissionalAlterado.Ativo;
+            profissional.Observacao = profissionalAlterado.Observacao;
+        }
     }
 }

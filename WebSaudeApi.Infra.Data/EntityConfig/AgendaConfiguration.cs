@@ -80,6 +80,10 @@ namespace WebSaude.Infra.Data.EntityConfig
             Property(e => e.AnsAcidenteId)
                 .IsRequired()
                 .HasColumnName("ans_acidente_id");
+            
+            HasOptional(e => e.Cbo)
+                .WithMany()
+                .HasForeignKey(e => e.CboId);
         }
     }
 }

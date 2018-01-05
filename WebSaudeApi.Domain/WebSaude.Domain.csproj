@@ -31,6 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Commands\EmailCommand.cs" />
+    <Compile Include="Commands\ProfissionalCommand.cs" />
     <Compile Include="Commands\PacienteCommand.cs" />
     <Compile Include="Entities\Agenda.cs" />
     <Compile Include="Entities\AgendaAparelho.cs" />
@@ -113,6 +114,7 @@
     <Compile Include="Interfaces\Repositories\IWebControleRepository.cs" />
     <Compile Include="Interfaces\Repositories\IProfissionalRepository.cs" />
     <Compile Include="Interfaces\Repositories\IRepositoryBase.cs" />
+    <Compile Include="Interfaces\Services\IProfissionalService.cs" />
     <Compile Include="Interfaces\Services\IProfissionalAcessoService.cs" />
     <Compile Include="Interfaces\Services\IPacienteService.cs" />
     <Compile Include="Interfaces\Services\IServiceBase.cs" />

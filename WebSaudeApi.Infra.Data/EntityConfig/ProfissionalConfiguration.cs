@@ -120,6 +120,11 @@ namespace WebSaude.Infra.Data.EntityConfig
                 .WithRequired(e => e.Profissional)
                 .HasForeignKey(e => e.ProfissionalId)
                 .WillCascadeOnDelete(false);
+
+            HasRequired(e => e.Cbo)
+                .WithMany()
+                .HasForeignKey(e => e.CboId)
+                .WillCascadeOnDelete(false);
         }
     }
 }

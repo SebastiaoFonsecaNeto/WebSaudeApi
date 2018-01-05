@@ -12,6 +12,7 @@ namespace WebSaude.Startup.Service
 
             kernel.Bind<IPacienteService>().To<PacienteService>();
             kernel.Bind<IProfissionalAcessoService>().To<ProfissionalAcessoService>();
+            kernel.Bind<IProfissionalService>().To<ProfissionalService>();
         }
     }
 }

@@ -28,6 +28,11 @@ namespace WebSaude.Infra.Data.EntityConfig
                 .HasMaxLength(8)
                 .HasColumnName("codigo")
                 .IsUnicode(false);
+
+            HasRequired(e => e.Cbo)
+                .WithMany()
+                .HasForeignKey(e => e.CboId)
+                .WillCascadeOnDelete(false);
         }
     }
 }

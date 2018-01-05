@@ -35,34 +35,6 @@ namespace WebSaude.Infra.Data.EntityConfig
 
             Property(e => e.Clinico)
                 .HasColumnName("clinico");
-
-            HasMany(e => e.Agenda)
-                .WithOptional(e => e.Cbo)
-                .HasForeignKey(e => e.CboId);
-
-            HasMany(e => e.Encaminhamento)
-                .WithRequired(e => e.Cbo)
-                .HasForeignKey(e => e.CboId)
-                .WillCascadeOnDelete(false);
-
-            HasMany(e => e.ProcedimentoCboConvenio)
-                .WithRequired(e => e.Cbo)
-                .HasForeignKey(e => e.CboId)
-                .WillCascadeOnDelete(false);
-
-            HasMany(e => e.Profissional)
-                .WithRequired(e => e.Cbo)
-                .HasForeignKey(e => e.CboId)
-                .WillCascadeOnDelete(false);
-
-            HasMany(e => e.ProntoAtendimento)
-                .WithOptional(e => e.Cbo)
-                .HasForeignKey(e => e.CboId);
-
-            HasMany(e => e.ProntuarioClinico)
-                .WithRequired(e => e.Cbo)
-                .HasForeignKey(e => e.CboId)
-                .WillCascadeOnDelete(false);
         }
     }
 }

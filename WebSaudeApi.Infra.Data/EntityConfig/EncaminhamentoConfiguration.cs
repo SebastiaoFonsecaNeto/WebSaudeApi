@@ -36,6 +36,11 @@ namespace WebSaude.Infra.Data.EntityConfig
                 .HasColumnType("text")
                 .HasColumnName("descricao")
                 .IsUnicode(false);
+
+            HasRequired(e => e.Cbo)
+                .WithMany()
+                .HasForeignKey(e => e.CboId)
+                .WillCascadeOnDelete(false);
         }
     }
 }

@@ -63,6 +63,11 @@ namespace WebSaude.Infra.Data.EntityConfig
                 .WithRequired(e => e.ProntuarioClinico)
                 .HasForeignKey(e => e.ProntuarioClinicoId)
                 .WillCascadeOnDelete(false);
+
+            HasRequired(e => e.Cbo)
+                .WithMany()
+                .HasForeignKey(e => e.CboId)
+                .WillCascadeOnDelete(false);
         }
     }
 }

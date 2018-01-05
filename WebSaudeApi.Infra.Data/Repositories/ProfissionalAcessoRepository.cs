@@ -31,9 +31,7 @@ namespace WebSaude.Infra.Data.Repositories
                 profissional.Ultimo = DateTime.Now;
 
                 Update(profissional);
-
-                Db.SaveChanges();
-
+                
                 return (profissional.Token);
             }
             catch (EntitySqlException erro)
@@ -54,8 +52,6 @@ namespace WebSaude.Infra.Data.Repositories
                 profissional.Token = null;
 
                 Update(profissional);
-
-                Db.SaveChanges();
 
                 return true;
             }
